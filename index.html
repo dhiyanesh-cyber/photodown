@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Enter Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css"> <!-- Linking an external CSS file -->
+  <style>
+    /* Sample media query for mobile devices */
+    @media screen and (max-width: 600px) {
+      /* Adjusting styles for smaller screens */
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      /* You can add more styles specific to smaller screens here */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Enter Your Details</h1>
-    <form action="images.php" method="post" class="form"> <!-- Updated action to images.php -->
+    <form action="images.php" method="post" class="form">
       
       <label class="label1" for="name">Name:</label>
       <input type="text" id="name" name="name" required><br><br>
